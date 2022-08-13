@@ -19,27 +19,27 @@ const Formulario = () => {
 
     return (
         <Form>
-            <Form.Group className="mb-3" controlId="formBasicName" as={Row}>
+            <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Nome</Form.Label>
                 <Form.Control type="text" id="nome" placeholder="Seu nome aqui" onBlur={handleChange} />
             </Form.Group>  
 
-            <Form.Group className="mb-3" controlId="formBasicName" as={Row}>
+            <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Sobrenome</Form.Label>
                 <Form.Control type="text" id="sobrenome" placeholder="Seu sobrenome aqui" onBlur={handleChange} />
             </Form.Group>
                
-            <Form.Group className="mb-3" controlId="formBasicEmail" as={Row}>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>E-mail</Form.Label>
                 <Form.Control type="email" id="email" placeholder="usuario@mail.com" onBlur={handleChange} />
             </Form.Group>
                
-            <Form.Group className="mb-3" controlId="formBasicTel" as={Row}>
+            <Form.Group className="mb-3" controlId="formBasicTel">
                 <Form.Label>Telefone</Form.Label>
                 <Form.Control type="tel" id="telefone" placeholder="(xx) xxxxx - xxxx" onBlur={handleChange} required />
             </Form.Group>
                 
-            <Form.Group className="mb-3" controlId="formBasicEmail" as={Row}>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Endereço</Form.Label>
                 <Form.Control type="text" id="endereço" placeholder="Nome da rua, nº" onBlur={handleChange} />
             </Form.Group>
