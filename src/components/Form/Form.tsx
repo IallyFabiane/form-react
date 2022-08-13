@@ -19,13 +19,13 @@ const Formulario = () => {
 
 
     return (
-        <div className="container-fluid overflow-hidden gap-2">
+        <div className="container-fluid overflow-hidden gap-2 w-100" style={{ margin: '2% 5%' }}>
             <Row>
             <Col className="col col-4">
                 <Form>
                         <Form.Group className="mb-3" controlId="formBasicName" >
-                            <Form.Label>Nome</Form.Label>
-                            <Form.Control type="text" id="nome" placeholder="Seu nome aqui" onBlur={handleChange} />
+                                <Form.Label>Nome</Form.Label>
+                                <Form.Control type="text" id="nome" placeholder="Seu nome aqui" onBlur={handleChange} />
                         </Form.Group> 
                         
                         <Form.Group className="mb-3" controlId="formBasicName">
@@ -45,11 +45,11 @@ const Formulario = () => {
                             
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Endereço</Form.Label>
-                            <Form.Control type="text" id="endereço" placeholder="Nome da rua, nº" onBlur={handleChange} />
+                            <Form.Control type="text" id="endereço" placeholder="Nome da rua, nº xx-Bairro: xxx, Cidade-UF" onBlur={handleChange} />
                         </Form.Group>
                         
                         <div className="d-grid gap-2">
-                            <Button variant="outline-info" onClick={handleSubmit} type="submit">Submit</Button>
+                            <Button variant="outline-danger" onClick={handleSubmit} type="submit">Submit</Button>
                         </div>
                     </Form>
                 </Col>
