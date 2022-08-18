@@ -39,24 +39,29 @@ const Formulario = () => {
                         
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>E-mail</Form.Label>
-                            <Form.Control type="email"  placeholder="usuario@mail.com"  {...register("email", { required: true, pattern: /\S+@\S+\.\S+/ })} onBlur={handleChange} />
+                            <Form.Control type="email"  placeholder="usuario@mail.com" {...register("email", { required: true, pattern: /\S+@\S+\.\S+/ })} onBlur={handleChange} />
                             {errors.email?.type === 'required' && <span> This field is required</span>}
                             {errors.email?.type === 'pattern' && <span> Invalid email</span>}
 
                         </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Senha</Form.Label>
+                            <Form.Control type="password"  placeholder="........" required />
+                        </Form.Group>
                         
                         <Form.Group className="mb-3" controlId="formBasicTel">
                             <Form.Label>Telefone</Form.Label>
-                            <Form.Control type="tel" placeholder="(xx) xxxxx - xxxx" onBlur={handleChange} required />
+                            <Form.Control type="tel" placeholder="(xx) xxxxx - xxxx" onBlur={handleChange} />
                         </Form.Group>
                             
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Group className="mb-3" controlId="formBasicAddress">
                             <Form.Label>Endereço</Form.Label>
                             <Form.Control type="text" placeholder="Nome da rua, nº xx-Bairro: xxx," onBlur={handleChange} />
                         </Form.Group>
                         
                         <div className="d-grid gap-2">
-                            <Button variant="outline-danger"  type="submit">Submit</Button>
+                            <Button variant="outline-danger"  type="submit">Enviar</Button>
                         </div>
                     </Form>
                 </Col>
