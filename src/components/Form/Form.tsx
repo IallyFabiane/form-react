@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import { useForm, SubmitHandler } from "react-hook-form";
+import PasswordChecklist from "react-password-checklist";
 import { Form } from 'react-bootstrap';
 import  { Button } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
@@ -12,6 +13,8 @@ type Inputs = {
 
 const Formulario = () => {
     const [state, setState] = useState('');
+    const [password, setPassword] = useState("");
+    const [passwordAgain, setPasswordAgain] = useState("");
     const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
 
@@ -47,7 +50,16 @@ const Formulario = () => {
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Senha</Form.Label>
-                            <Form.Control type="password"  placeholder="........" required />
+                            <Form.Control type="password"  placeholder="........" required  onChange={ e => setPassword(e.target.value)} />
+                            <Form.Label>Digite sua senha novamente</Form.Label>
+                            <Form.Control type="password"  placeholder="........" required onChange={e => setPasswordAgain(e.target.value)} />
+                            <PasswordChecklist
+                                rules={["minLength","specialChar","number","capital","match"]}
+                                minLength={5}
+                                value={password}
+                                valueAgain={passwordAgain}
+                                onChange={(isValid) => {}}
+                            />
                         </Form.Group>
                         
                         <Form.Group className="mb-3" controlId="formBasicTel">
