@@ -61,7 +61,7 @@ const Formulario = () => {
                         </Form.Group>
                         
                         <div className="d-grid gap-2">
-                            <Button variant="outline-danger"  type="submit">Enviar</Button>
+                            <Button variant="outline-info"  type="submit">Enviar</Button>
                         </div>
                     </Form>
                 </Col>
