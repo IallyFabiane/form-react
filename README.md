@@ -7,5 +7,5 @@
     <img align="center" alt="React" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
     <img align="center" alt="Ts" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
     <img align="center" alt="Bootstrap" height="30" width="40"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-     <img align="center" alt="Bootstrap" height="90" width="60"src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png" />
+     <img align="center" alt="Bootstrap" height="90" width="90"src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png" />
 </div>
