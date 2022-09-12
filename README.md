@@ -8,5 +8,5 @@
     <img align="center" alt="Ts" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
     <img align="center" alt="Bootstrap" height="30" width="40"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
      <img align="center" alt="Netlify" height="100" width="90" src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png" />
-    <img align="center" alt="Netlify" height="100" width="90" src="https://images.ctfassets.net/9rjuw2iojffv/7KUqFSUpvXdsOs6lWPQlfy/b3ed1499838c7c86bd3201d9092e5962/react-hook-form.PNG?w=1020&q=50" />
+    <img align="center" alt="React Hook Form" height="80" width="90" src="https://images.ctfassets.net/9rjuw2iojffv/7KUqFSUpvXdsOs6lWPQlfy/b3ed1499838c7c86bd3201d9092e5962/react-hook-form.PNG?w=1020&q=50" />
 </div>
